@@ -1,12 +1,16 @@
 /* add font family Quicksand from Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
-/* styling body element font-family Quicksand,set make size margin and padding : 0 and add boxsizing to border-box*/
+/* add box-sizing on universal elemen */
+*{
+      box-sizing: border-box;
+}
+
+/* styling body element font-family Quicksand,set make size margin and padding : 0 */
 body{
     font-family: 'Quicksand',sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* add color font for h2 and h3 to light blue */
@@ -49,6 +53,18 @@ nav a:hover{
     font-weight: bold;
 }
 
+/* add padding tags main so easy to readable and overlow auto for id content and main element has normal flow after use float property*/
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+/* add float left with width 75% on id content */
+#content {
+    float: left;
+    width: 75%;
+}
+
 /* set featured image width and height */
 .featured-image{
     width: 100%;
@@ -65,9 +81,20 @@ nav a:hover{
     margin-top: 20px;
 }
 
-/* add padding tags main so easy to readable */
-main{
-    padding: 20px;
+/* add aside element float right with width 25% */
+aside{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* make a aside elemen and id content when use media screen with max width 1000px aside elemen will be under article content */
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 /* centering header profile  */
@@ -78,6 +105,9 @@ main{
 .profile img{
     width: 200px;
 }
+
+
+
 
 footer{
     padding: 20px;
