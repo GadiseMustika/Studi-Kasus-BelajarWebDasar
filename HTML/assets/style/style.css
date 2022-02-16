@@ -1,9 +1,12 @@
 /* add font family Quicksand from Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
-/* styling body element font-family Quicksand */
+/* styling body element font-family Quicksand,set make size margin and padding : 0 and add boxsizing to border-box*/
 body{
     font-family: 'Quicksand',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* add color font for h2 and h3 to light blue */
@@ -11,11 +14,34 @@ h2, h3{
     color: #00a2c6;
 }
 
-/* add font size,weight,and decoration for navigation */
+/* add jumbotron */
+.jumbotron{
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+
+/* add background color navigation */
+nav{
+    background-color: #00a2c6;
+    padding: 5px;
+}
+
+/* set position navigation  */
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+/* add font size,weight,color,and decoration for links navigation */
 nav a{
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
+    color: white;
 }
 
 /* hovering navigation become font bold */
@@ -23,7 +49,7 @@ nav a:hover{
     font-weight: bold;
 }
 
-/* set image width and height */
+/* set featured image width and height */
 .featured-image{
     width: 100%;
     max-height: 300px;
@@ -37,6 +63,11 @@ nav a:hover{
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
+}
+
+/* add padding tags main so easy to readable */
+main{
+    padding: 20px;
 }
 
 /* centering header profile  */
