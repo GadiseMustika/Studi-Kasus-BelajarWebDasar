@@ -27,10 +27,17 @@ h2, h3{
     color: white;
 }
 
-/* add background color navigation */
+/* add header display inline so that make a navigation is that on browser page  */
+header{
+    display: inline;
+}
+
+/* add background color navigation and postion sticky so that navigarion is at on the browser page*/
 nav{
     background-color: #00a2c6;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
 /* set position navigation  */
